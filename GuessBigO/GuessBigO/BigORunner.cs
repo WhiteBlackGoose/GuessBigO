@@ -87,10 +87,15 @@ public sealed class BigORunner<T> where T : Target, new()
         GC.Collect(2, GCCollectionMode.Forced, true, true);
         GC.WaitForPendingFinalizers();
         GC.Collect();
+        var finalIters = 0;
         sw.Start();
-        for (int i = 0; i < iterCount; i++)
-            target.Run();
+        do
+        {
+            for (int i = 0; i < iterCount; i++)
+                target.Run();
+            finalIters += iterCount;
+        } while (sw.ElapsedMilliseconds < 500);
         sw.Stop();
-        return (double)sw.ElapsedMilliseconds / iterCount;
+        return (double)sw.ElapsedMilliseconds / finalIters;
     }
 }
