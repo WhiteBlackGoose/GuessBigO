@@ -8,7 +8,7 @@ namespace GuessBigO;
 public sealed class BigORunner<T> where T : Target, new()
 {
     private readonly ILogger logger;
-    public BigORunner(ILogger? logger)
+    public BigORunner(ILogger? logger = null)
         => this.logger = logger ?? new EmptyLogger();
 
     private readonly static (Entity Expression, Func<double, double> Compiled)[] complexities = 
