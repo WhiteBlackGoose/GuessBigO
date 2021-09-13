@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31612.314
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GuessBigO", "GuessBigO\GuessBigO.csproj", "{18D281FF-5DC2-46C5-BD96-A740CB463EC7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sample", "..\Sample\Sample.csproj", "{CB6FA952-5CF9-4233-81A2-A90EFDF6E5A4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{18D281FF-5DC2-46C5-BD96-A740CB463EC7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{18D281FF-5DC2-46C5-BD96-A740CB463EC7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{18D281FF-5DC2-46C5-BD96-A740CB463EC7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{18D281FF-5DC2-46C5-BD96-A740CB463EC7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CB6FA952-5CF9-4233-81A2-A90EFDF6E5A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CB6FA952-5CF9-4233-81A2-A90EFDF6E5A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CB6FA952-5CF9-4233-81A2-A90EFDF6E5A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CB6FA952-5CF9-4233-81A2-A90EFDF6E5A4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {92D1F8B1-6E35-4F68-B781-10E3908AB85C}
+	EndGlobalSection
+EndGlobal
