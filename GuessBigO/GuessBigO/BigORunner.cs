@@ -15,12 +15,23 @@ public sealed class BigORunner<T> where T : Target, new()
         new Entity[]
         {
             "1",
+            "log(log(n))",
+            "log(n)",
+            "log(n^2)",
+            "cbrt(n)",
             "sqrt(n)",
             "n",
+            "n*log(n)",
+            "n*(log(n))^2",
             "n^2",
             "n^3",
+            "n^4",
+            "n^log(n)",
+            "n^log(log(n))",
             "e^n",
-            "2^n"
+            "2^n",
+            "2^(n^2)",
+            "n!"
         }
         .Select(c => (c, c.Compile<double, double>("n")))
         .ToArray();
